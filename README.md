@@ -1,3 +1,3 @@
 # theOdinProject
 
-rr6te6
+Test read me
