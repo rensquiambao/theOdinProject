@@ -107,7 +107,7 @@ function playRound(humanChoice, computerChoice) {
     }
 
     if (humanScore === 5) {
-        endGame("Congratulations, You win!");
+        endGame("Congratulations! You win!");
     } else if (computerScore === 5) {
         endGame("You lost. Play Again");
     }
