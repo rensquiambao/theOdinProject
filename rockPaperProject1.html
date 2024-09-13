@@ -3,9 +3,63 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
         <title>Document</title>
     </head>
     <body>
-        <script src="scriptNof.js"></script>
+        <div id="container">
+            <div id="monitor">
+                <div id="scoreboard">
+                    <div id="human-score">
+                        <span>HUMAN</span>
+                        <span id="humanScoreElem">0</span>
+                    </div>
+                    <div id="computer-score">
+                        <span>COMPUTER</span>
+                        <span id="computerScoreElem">0</span>
+                    </div>
+                </div>
+                <div id="winnerAnnouncer">GAME START</div>
+                <div id="game-display">
+                    <div id="img-rock">
+                        <img
+                            src="./images/hand rock.png"
+                            alt="hand paper"
+                            id="human-choice"
+                            class="image"
+                        />
+                    </div>
+                    <div id="img-hand">
+                        <img
+                            src="./images/hand-paper.png"
+                            alt="hand rock"
+                            id="computer-choice"
+                            class="image"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div id="button-container">
+                <img
+                    id="btnRock"
+                    class="img-btn"
+                    src="./images/hand rock (white).png"
+                    alt="hand rock button"
+                />
+                <img
+                    id="btnPaper"
+                    class="img-btn"
+                    src="./images/hand-paper (white).png"
+                    alt="hand paper button"
+                />
+                <img
+                    id="btnScsrs"
+                    class="img-btn"
+                    src="./images/hand scissors (white).png"
+                    alt="hand scissors button"
+                />
+            </div>
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>
