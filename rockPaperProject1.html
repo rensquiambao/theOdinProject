@@ -11,34 +11,35 @@
             <div id="monitor">
                 <div id="scoreboard">
                     <div id="human-score">
-                        <span>HUMAN</span>
-                        <span id="humanScoreElem">0</span>
+                        <span id="player1">YOU</span>
+                        <span id="humanScoreElem" class="score">0</span>
                     </div>
                     <div id="computer-score">
-                        <span>COMPUTER</span>
-                        <span id="computerScoreElem">0</span>
+                        <span id="player2">OPPONENT</span>
+                        <span id="computerScoreElem" class="score">0</span>
                     </div>
                 </div>
-                <div id="winnerAnnouncer">GAME START</div>
+                <div id="message-log">GAME START</div>
                 <div id="game-display">
-                    <div id="img-rock">
+                    <div id="human-choice">
                         <img
                             src="./images/hand rock.png"
                             alt="hand paper"
-                            id="human-choice"
+                            id="img-humanChoice"
                             class="image"
                         />
                     </div>
-                    <div id="img-hand">
+                    <div id="computer-choice">
                         <img
                             src="./images/hand-paper.png"
                             alt="hand rock"
-                            id="computer-choice"
+                            id="img-computerChoice"
                             class="image"
                         />
                     </div>
                 </div>
             </div>
+            <button id="start-btn">START</button>
             <div id="button-container">
                 <img
                     id="btnRock"

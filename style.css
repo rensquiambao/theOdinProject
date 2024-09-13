@@ -4,23 +4,31 @@ body {
 }
 #container {
     height: 100vh;
-    width: 80%;
+    width: 58%;
     display: flex;
     position: relative;
     justify-content: center;
     background-color: rgb(3, 34, 61);
     border: solid 10px;
     border-color: black;
-    border-radius: 10%;
+    border-radius: 8%;
 }
 #button-container {
     position: absolute;
     bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 68%;
+    transform: translateX(-68%);
     display: flex;
     justify-content: center;
     gap: 30px;
+}
+#start-btn {
+    position: absolute;
+    right: 65%;
+    bottom: 30px;
+    transform: translateY(-60%);
+    font-family: monospace;
+    font-size: 4vh;
 }
 #monitor {
     height: 75vh;
@@ -47,10 +55,9 @@ body {
 .image {
     width: 200px;
     height: 200px;
-    transform: rotate(90deg);
 }
-#img-hand {
-    transform: rotate(180deg);
+#img-computerChoice {
+    transform: scaleX(-1);
 }
 #scoreboard {
     display: flex;
@@ -58,21 +65,35 @@ body {
     left: 50%;
     bottom: 75px;
     transform: translateX(-50%);
-    justify-content: center;
-    gap: 150px;
+    justify-content: space-between;
+    font-family: monospace;
+    font-size: 3vh;
 }
-#winnerAnnouncer {
+#human-score {
+    margin-left: 20px;
+    margin-right: 60px;
+    text-align: center;
+}
+#computer-score {
+    margin-left: 145px;
+    text-align: center;
+}
+#message-log {
     position: absolute;
     width: 80%;
     height: 20%;
     left: 50%;
     top: 100px;
     transform: translateX(-50%);
-    font-size: 7vh;
+    font-size: 5vh;
     font-family: monospace;
     text-align: center;
 }
 .img-button {
     width: 50px;
     height: 50px;
+}
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
 }
